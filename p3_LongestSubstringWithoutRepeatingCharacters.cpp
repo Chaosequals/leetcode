@@ -58,7 +58,7 @@ int lengthOfLongestSubstring(string s) {
         {
             if(table[s[i]] > -1)
             {
-                head = max(head, table[s[i]]+1) ;
+                head = max(head, table[s[i]]+1) ;           //the key to understand this algorithm is to understand this line well.
             }
             max_s = max(max_s , i - head + 1) ;
             table[s[i]] = i ;
